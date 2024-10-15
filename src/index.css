@@ -1,0 +1,96 @@
+/* General layout container */
+.app-container {
+  display: grid;
+  grid-template-columns: 1fr 200px; /* Two columns: card (flexible width) and banned attributes (fixed width) */
+  align-items: center;               /* Center vertically */
+  height: 100vh;                    /* Full viewport height */
+  background-color: #f5f5f5;        /* Light background */
+  padding: 20px;
+}
+
+/* Card container styling */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Center vertically */
+  align-items: center;      /* Center horizontally */
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 400px;        /* Maximum width for the card */
+  margin: auto;            /* Center the card */
+  text-align: center;      /* Center text */
+}
+
+/* Attribute button styles */
+.attr button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 10px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.attr button:hover {
+  background-color: #45a049;
+}
+
+/* Discover button */
+.discover-btn {
+  margin-top: 20px;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.discover-btn:hover {
+  background-color: #007bb5;
+}
+
+/* Banned attributes styling */
+.ban-container {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;  /* Fixed width for the banned attributes */
+}
+
+.ban-container h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.ban-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ban-container li {
+  cursor: pointer;
+  margin: 5px 0;
+  color: #e74c3c;  /* Red color for banned attributes */
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.ban-container li:hover {
+  color: #c0392b;
+  text-decoration: underline;
+}
+
+/* Image styling */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 15px;
+}
